@@ -132,7 +132,7 @@ document.getElementById("A*").addEventListener("click", function () {
         // Puedes desactivar la clase de resaltado después de un tiempo para quitar el resaltado
         setTimeout(() => {
             path.removeClass("shortest-path");
-        }, 10000); // Quitar el resaltado después de 3 segundos (ajusta el tiempo según tu preferencia)
+        }, 20000); // Quitar el resaltado después de 20 segundos 
     } else {
         alert("No se encontró un camino entre los nodos seleccionados.");
     }
