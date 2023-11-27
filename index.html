@@ -5,15 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear Grafo con Cytoscape.js</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.20.0/cytoscape.min.js"></script>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="cy-container" style="width: 500px; height: 500px;"></div>
-    <button id="crearNodo">Crear Nodo</button>
-    <button id="crearArista">Crear Arista</button>
-    <input type="text" id="pesoArista" placeholder="Peso de la arista">
-    <button id="nodoInicial">Escoger nodo inicial</button>
-    <button id="nodoFinal">Escoger nodo final</button>
-    <button id="A*">Encontrar camino</button>
+	<div class="titles">
+		<h1 class="main-title">RUTA ESTRELLA</h1>	
+	</div>
+    <div id="cy-container"></div>
+	<div class="buttons-container">
+		<div class="nodos-container">
+			<button id="crearNodo">Crear Nodo</button>
+			<button id="borrarN">Borrar Nodo</button>
+			<button id="borrarA">Borrar Arista</button>
+		</div>
+		<div class="aristas-container">
+			<select id="nodeDropdownDesde" class="dropdown">
+				<option value="" disabled selected>Seleccionar Nodo Desde</option>
+			</select>
+			<select id="tipoArista" class="dropdown">
+				<option value="" disabled selected>Seleccionar Tipo de Arista</option>
+				<option value="izq"> ←— </option>
+				<option value="der"> —→ </option>
+			</select>
+			<select id="nodeDropdownHasta" class="dropdown">
+				<option value="" disabled selected>Seleccionar Nodo Hasta</option>
+			</select>
+			<input type="text" id="pesoArista" placeholder="Peso de la arista">
+			<button id="crearArista">Crear Arista</button>
+		</div>
+		<div class="estrella">
+			<button id="nodoInicial">Escoger nodo inicial</button>
+			<button id="nodoFinal">Escoger nodo final</button>
+			<button id="A*">Encontrar camino</button>
+			<button id="quitarEstrella">Olvidar camino</button>
+		</div>		
+	</div>
     <script src="script.js"></script>
 </body>
 </html>

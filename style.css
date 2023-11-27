@@ -1,0 +1,102 @@
+#cy-container {
+	border: 1px solid black; 
+	position: relative; 
+	width: 90%;
+	height: 50vh;
+	resize: both;
+	overflow: auto;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+body{
+	background-color: #FFF1A8;
+
+}
+
+.titles{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.main-title{
+	color: #984A59;
+	font-family: 'Garamond', cursive;
+	font-size: 3em;
+	text-shadow: #FF8F56 3px 3px 3px;
+}
+
+.cy-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 10px;
+	justify-content: center;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.buttons-container button {
+    margin: 5px;
+	background-color: #984A59;
+	color: #FFF1A8;
+	cursor: pointer;
+}
+
+.buttons-container button:hover {
+	background-color: #FF8F56;
+}
+
+.estrella {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.estrella button {
+    margin: 5px;
+}
+
+.aristas-container {
+	display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.nodos-container {
+	display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.dropdown {
+	background-color: #984A59;
+	color: #FFF1A8;
+}
+
+.dropdown:hover {
+	background-color: #FF8F56;
+}
+
+.dropdown option {
+	color: #FFF1A8;
+	background-color: #FF8F56;
+}
+
+#pesoArista {
+	background-color: #FFF1A8;
+	border-color: #984A59
+	color: #984A59;
+}
