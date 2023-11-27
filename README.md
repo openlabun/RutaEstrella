@@ -28,4 +28,5 @@ Las aristas entre N0,N2 y N2,N1 habran cambiado de color al ser el camino mas co
 ## Author
 
 - [**Smonsalve2417**](https://github.com/smonsalve2417)
-
+- [**Ayenhenriquez**](https://github.com/Ayenhenriquez)
+- [**Veronicaospina**](https://github.com/Veronicaospina)
