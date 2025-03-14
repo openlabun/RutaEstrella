@@ -28,5 +28,5 @@ jobs:
           git status
           docker stop rutaestrella-app
           docker rm rutaestrella-app
-          docker build -t rutaestrella .
-          docker run -d -it -p 5006:80 --restart unless-stopped --name rutaestrella-app rutaestrella
+          docker build -t rutaestrella-image .
+          docker run -d -it -p 5006:80 --restart unless-stopped --name rutaestrella rutaestrella-image
